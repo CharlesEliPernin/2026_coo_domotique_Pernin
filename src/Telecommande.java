@@ -24,6 +24,10 @@ public class Telecommande{
         throw new Error (" code non ecrit ");
     }
 
+    public List<Lampe> getLampes(){
+        return this.lampes;
+    }
+
     public String toString(){
         throw new Error (" code non ecrit ");
     }
