@@ -66,7 +66,7 @@ public class Telecommande{
             res += "Lampe " + i + " " + this.lampes.get(i).toString() + "\n";
         }
         for (int i = 0; i < this.hifis.size(); i++){
-            res += "Hifi " + i +"\n";
+            res += "Hifi " + i + " " + this.hifis.get(i).toString() + "\n";
         }
 
         return res;
