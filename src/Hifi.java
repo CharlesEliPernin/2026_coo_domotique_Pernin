@@ -27,6 +27,10 @@ class Hifi implements ObjetConnecte{
 
 	}
 
+	public int getSon() {
+		return this.son;
+	}
+
 	/**
 	 * surcharge de la methode affichage sous la forme "Hifi:10"
 	 * 

@@ -5,6 +5,9 @@ public class Telecommande{
 
     private List<ObjetConnecte> objetsConnectes;
 
+    public Telecommande(){
+        objetsConnectes = new ArrayList<ObjetConnecte>();
+    }
     public void allumer(int indice){
         if (indice < objetsConnectes.size()){
             objetsConnectes.get(indice).allumer();
