@@ -14,12 +14,16 @@ public class Telecommande{
         this.lampes.add(l);
     }
 
-    public void activerLampe(int indice){
-        this.lampes.get(indice).allumer();
+    public void activerLampe(int indice) {
+        if (indice < lampes.size()) {
+            this.lampes.get(indice).allumer();
+        }
     }
 
-    public void desactiverLampe(int indice){
-        this.lampes.get(indice).eteindre();
+    public void desactiverLampe(int indice) {
+        if (indice < lampes.size()) {
+            this.lampes.get(indice).eteindre();
+        }
     }
 
     public void activerTout(){

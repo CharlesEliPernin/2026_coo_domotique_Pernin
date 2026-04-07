@@ -16,7 +16,7 @@ public class TelecommandeTest{
 
         t.ajouterLampe(l1);
 
-        assertEquals(t.getLampes().size(), 1, "Erreur dans le nombre de lampes");
+        assertEquals(1, t.getLampes().size(), "Erreur dans le nombre de lampes");
     }
 
     @Test
