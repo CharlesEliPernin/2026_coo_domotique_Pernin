@@ -1,6 +1,7 @@
 package donnees;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -46,7 +47,6 @@ public class CD {
 	public CD(String artiste, String nomCDParam) {
 		this.nomArtiste = artiste;
 		this.nomCD = nomCDParam;
-
 		this.pistes = new ArrayList<InfoPiste>();
 	}
 
@@ -81,6 +81,9 @@ public class CD {
 		return (r);
 	}
 
+	public String getNomCD(){
+		return this.nomCD;
+	}
 	/**
 	 * retourne une chaine correspondant au numero de piste (sur deux char) pour
 	 * pouvoir afficher les pistes sans decalage

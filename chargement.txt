@@ -1,0 +1,11 @@
+Dans un premier temps on créer un chargeur à l'aide de la classe ChargeuMagasin en lui passant le répértoire rep en paramètre.
+On appelle sa méthode chargerMagasin() qui est sensé retourner un magasin construit à partir de tous les fichiers contenu dans le répértoire passés à la construction
+
+Cette méthode initialise donc un magasin
+
+Ensuite pour chaque fichier du dépot, elle crée un ChargeurCD qui prend en paramètre le nom du fichier
+Sa méthode chargerCD est appelée et cette dernière va s'occuper de créer le CD puis ajouter toutes les pistes correspondantes à ce dernier à partir du fichier.
+
+Une fois toutes les pistes ajoutées le Cd est retourné à chargeur et il termine par ajouter le CD au magasin.
+
+Une fois tous les CD ajoutées il retourne le magasin.
