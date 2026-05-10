@@ -26,11 +26,22 @@ public class Tests {
     }
 
     @Test
-    public void testTriAlbums() throws FileNotFoundException {
+    public void testTriNomsAlbums() throws FileNotFoundException {
         ChargeurMagasin chargeur = new ChargeurMagasin("musicbrainzSimple/");
         Magasin mag = chargeur.chargerMagasin();
         mag.trierAlbum();
 
+        assertEquals("Believe", mag.getCd(0).getNomCD(), "Pas le bon Cd au début");
+        assertEquals("Whitney Houston", mag.getCd(11).getNomCD(), "Pas le bon Cd à la fin");
+    }
 
+    @Test
+    public void testTriNomsArtistes() throws FileNotFoundException {
+        ChargeurMagasin chargeur = new ChargeurMagasin("musicbrainzSimple/");
+        Magasin mag = chargeur.chargerMagasin();
+        mag.trierArtiste();
+
+        assertEquals("Bénabar", mag.getCd(0).getNomArtiste(), "Pas le bon Cd au début");
+        assertEquals("Zebda", mag.getCd(11).getNomArtiste(), "Pas le bon Cd à la fin");
     }
 }

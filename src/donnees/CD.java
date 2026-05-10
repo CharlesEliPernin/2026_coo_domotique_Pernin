@@ -84,6 +84,9 @@ public class CD {
 	public String getNomCD(){
 		return this.nomCD;
 	}
+	public String getNomArtiste(){
+		return this.nomArtiste;
+	}
 	/**
 	 * retourne une chaine correspondant au numero de piste (sur deux char) pour
 	 * pouvoir afficher les pistes sans decalage

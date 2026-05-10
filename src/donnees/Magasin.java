@@ -86,4 +86,22 @@ public class Magasin {
 		listeCds = nouvelleListe;
 	}
 
+	public void trierArtiste(){
+		ArrayList<CD> nouvelleListe = new ArrayList<CD>();
+		int aInserer;
+		while (!listeCds.isEmpty()){
+			aInserer = 0;
+			for (int i = 1 ; i< listeCds.size(); i++){
+				if (getCd(i).getNomArtiste().compareTo(getCd(aInserer).getNomArtiste()) <= 0){
+					aInserer = i;
+				}
+			}
+
+			nouvelleListe.add(getCd(aInserer));
+			listeCds.remove(aInserer);
+		}
+
+		listeCds = nouvelleListe;
+	}
+
 }
