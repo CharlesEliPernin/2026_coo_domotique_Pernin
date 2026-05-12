@@ -104,4 +104,22 @@ public class Magasin {
 		listeCds = nouvelleListe;
 	}
 
+	public void trier(ComparateurCd comparateur){
+		ArrayList<CD> nouvelleListe = new ArrayList<CD>();
+		int aInserer;
+		while (!listeCds.isEmpty()){
+			aInserer = 0;
+			for (int i = 1 ; i< listeCds.size(); i++){
+				if (comparateur.etreAvant(getCd(i), getCd(aInserer))){
+					aInserer = i;
+				}
+			}
+
+			nouvelleListe.add(getCd(aInserer));
+			listeCds.remove(aInserer);
+		}
+
+		listeCds = nouvelleListe;
+	}
+
 }

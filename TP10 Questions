@@ -1,0 +1,10 @@
+3) Il faudra modifier CD, Magasin et potentiellement infoPiste. Cela fait beaucoup de modifications à chaque fois donc ce n'est pas optimal.
+
+4) Oui, la méthode de tri par nomCD ou j'ai changé le getNomCD par getNomArtiste. J'ai fait cela car la méthode de tri est exactement la même, on change
+juste les chaines de caractères qui sont comparées. Avant de copier coller je me suis assuré que triCD fonctionnait.
+
+5) Comme dit au dessus tout est en commun sauf les guetteur pour récup la chaine de caractère.
+
+6) Si on souhaite conserver le tri par insertion alors oui on aura juste a changer le moyen de comparaison mais le squelette est bon
+Si on prend une autre méthode de tri alors la il faudra tout modifier
+
